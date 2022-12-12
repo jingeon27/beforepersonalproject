@@ -25,7 +25,6 @@ app.use(
   })
 );
 app.use((req, res, next) => {
-  console.log(process.env.COOKIE_SECRET);
   console.log("모든 요청에 다 실행됩니다.");
   next();
 });
